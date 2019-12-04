@@ -4,8 +4,8 @@ const logo = document.querySelector("#logo");
 
 const t1 = new TimelineMax();
 
-t1.fromTo(hero, 1, { height: "0%" }, { height: "80%", ease: Power2.easeInOut })
-  .fromTo(hero, 1.2, { width: "100%" }, { width: "80%" })
+t1.fromTo(hero, 1, { height: "0%" }, { height: "70%", ease: Power2.easeInOut })
+  .fromTo(hero, 1.2, { width: "80%" }, { width: "70%" })
   .fromTo(
     slider,
     1,
