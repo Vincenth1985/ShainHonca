@@ -3,8 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-weight: lighter;
-
-  font-family: "Open Sans", sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 body {
@@ -39,7 +38,6 @@ body {
   list-style: none;
   width: 80%;
   justify-content: center;
-
   margin-left: auto;
   margin-right: auto;
 }
@@ -50,8 +48,8 @@ body {
 }
 
 .navbar ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
+  text-decoration: cornsilk;
+  font-weight: lighter;
   color: white;
   font-size: 2vh;
 }
@@ -135,6 +133,8 @@ section h1 {
   padding-top: 2%;
   border-top: solid;
   border-width: 1px;
+  border-bottom: solid;
+  border-bottom-width: 1px;
 }
 
 #Artist img {
