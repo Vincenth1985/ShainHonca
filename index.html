@@ -13,22 +13,71 @@
   </head>
   <body>
     <header>
-      <nav>
-        <h3 id="logo">SHAIN HONCA</h3>
-        <!-- hamburger -->
-        <h6 id="logo">gallery</h6>
-        <h6 id="logo">artist</h6>
-        <h6 id="logo">contact</h6>
-      </nav>
+      <div class="container">
+        <nav class="navbar">
+          <ul>
+            <li><a href="#SahinHonca">Sahin Honca</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#Artist">Artist</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
 
-      <section>
+      <section id="SahinHonca">
         <div class="hero">
-          <img src="/img/pexels-photo-1269968.jpeg" alt="" />
+          <img src="/img/5.jpg" alt="" />
+          <img src="/img/10.jpg" alt="" />
+          <img src="/img/7.jpg" alt="" />
         </div>
       </section>
     </header>
 
     <div class="slider"></div>
+
+    <section id="Gallery"><h1>Gallery</h1></section>
+    <section id="Artist">
+      <div>
+        <img
+          src="img/54514462_10156205113446732_2177315507290505216_o.jpg"
+          alt=""
+        />
+        <h4>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci
+          felis, dictum nec turpis in, lacinia iaculis ligula. Pellentesque at
+          sapien facilisis, auctor nisi et, tempus metus. Ut sapien lacus,
+          facilisis ut vestibulum a, convallis tincidunt odio. Nullam finibus
+          mattis nulla, sit amet commodo.lorem fringilla ac. Quisque at lacus in
+          urna viverra imperdiet blandit eu arcu. Cras at erat lacus. Nullam eu
+          rutrum dui. Nunc luctus vel libero finibus elementum. Nam quis
+          malesuada magna. Nulla ultrices lacus accumsan lectus commodo, quis
+          scelerisque purus condimentum. Duis blandit urna elementum turpis
+          aliquet semper.
+        </h4>
+        <br />
+        <h4>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci
+          felis, dictum nec turpis in, lacinia iaculis ligula. Pellentesque at
+          sapien facilisis, auctor nisi et, tempus metus. Ut sapien lacus.
+        </h4>
+      </div>
+    </section>
+    <section id="Contact">
+
+      <form method="sendmail()" >
+
+        <h3>Thank you for visiting my website.  If you would like to know more about my work or have a comment please call xxx-xxx-xxx or use the form below.</h3><br>
+        <div>
+         Name : <input type="text" id="name" /></form><br>
+          Email : <input type="text" id="email" style="width: 200px;" /></form><br>
+          Message : <br><textarea style="min-height: 100px ; min-width:200px;" id="message"></textarea><br>
+        <button type="submit">Send Mail</button>
+      </form>
+
+
+        </div>
+
+    </section>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
@@ -42,6 +91,9 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="app.js"></script>
+
+
   </body>
 </html>
