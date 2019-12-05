@@ -15,7 +15,7 @@
           <ul>
             <li><a href="#SahinHonca">Sahin Honca</a></li>
             <li><a href="#Gallery">Gallery</a></li>
-            <li><a href="#Artist">Artist</a></li>
+            <li><a href="#Artist">Biographie</a></li>
             <li><a href="#Contact">Contact</a></li>
           </ul>
         </nav>
@@ -33,14 +33,31 @@
 
     <section id="Gallery">
 
+      
+
+        
+      <img src="/gallery/2.jpg" id="serie" alt="">
+
+
+
+        <button onclick="imgGallery()">Next Serie</button>
+
+
+
+
+
+      
+<!-- 
       <img src="/img/5.jpg" alt="" />
           <img src="/img/10.jpg" alt="" />
-          <img src="/img/7.jpg" alt="" />
+          <img src="/img/7.jpg" alt="" /> -->
 
 
     
     
     </section>
+
+
     <section id="Artist">
       <div>
         <img
@@ -69,16 +86,39 @@
     </section>
     <section id="Contact">
 
-      <form method="sendmail()" >
+      <form action="https://postmail.invotes.com/send"
+    method="post" id="email_form" >
 
         <h3>Thank you for visiting my website.  If you would like to know more about my work or have a comment please call xxx-xxx-xxx or use the form below.</h3><br>
         <div>
           <br>
-         Name : <input type="text" id="name" /></form><br>
-          Email  : <input type="text" id="email" style="width: 200px;" /></form><br>
-          Message : <br><textarea style="min-height: 200px ; min-width:300px;" id="message"></textarea><br>
-        <button type="submit">Send Mail</button>
+         Name : <input type="text" name="subject" /><br>
+          Email  : <input type="text" name="reply_to adress" id="email" style="width: 200px;" /><br>
+          Message : <br><textarea name="text" style="min-height: 200px ; min-width:300px;" id="message"></textarea><br>
+                <input type="hidden" name="access_token" value="yknzmergdq123wrsaf7ukmpl" />
+                <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+             
+
+        <button id="submit_form" type="submit">Send</button>
       </form>
+
+
+    
+   
+
+     
+<!-- optional, prevents the submit button from being pressed more than once -->
+<script>
+    var submitButton = document.getElementById("submit_form");
+    var form = document.getElementById("email_form");
+    form.addEventListener("submit", function (e) {
+        setTimeout(function() {
+            submitButton.value = "Sending...";
+            submitButton.disabled = true;
+        }, 1);
+    });
+</script> 
 
 
         </div>
@@ -88,17 +128,15 @@
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
       integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
       integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
-      crossorigin="anonymous"
-    ></script>
-
+      crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="app.js"></script>
+    <script src="series.js"></script>
 
 
   </body>
