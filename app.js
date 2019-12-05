@@ -27,6 +27,13 @@ function sendmail() {
   var name = document.getElementById("name");
   var email = document.getElementById("email");
   var message = document.getElementById("message");
-  
-
 }
+
+var submitButton = document.getElementById("submit_form");
+var form = document.getElementById("email_form");
+form.addEventListener("submit", function(e) {
+  setTimeout(function() {
+    submitButton.value = "Sending...";
+    submitButton.disabled = true;
+  }, 1);
+});
